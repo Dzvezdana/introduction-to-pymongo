@@ -13,8 +13,11 @@ with client:
     print(employees.next())
     print(employees.next())
 
-    # Return the cursor to the original state
-    employees.rewind()  # Rewinds the cursor to its unevaluated state.
+    ''' 
+    Exercise 1
+    Return the cursor to the original state
+    '''
+    # Add code here
 
     print(employees.next())
     print(employees.next())
@@ -22,11 +25,18 @@ with client:
 
     print("\n")
 
-    # Print all employees
-    print(list(employees))
-    print("\n")
+    ''' 
+    Exercise 2
+    Print all employees
+    '''
+    # print("Add code here")
+    # print("\n")
 
-    # Print data for Emma
-    print(list(db.employee_data.find({'name': "Emma"})))
+    ''' 
+    Exercise 3
+    Print the document that contains the name Emma
+    '''
+    # print("Add code here")
+    # print("\n")
 
 client.close()

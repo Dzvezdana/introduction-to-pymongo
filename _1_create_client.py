@@ -9,7 +9,7 @@ def create_connection():
     # uri - defines the connection parameters
     uri = 'mongodb://localhost:27017/'
     # Start client to connect to MongoDB server
-    client = MongoClient(uri)
+    # client = # Create the client here
     return client
 
 
