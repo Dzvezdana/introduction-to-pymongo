@@ -6,8 +6,8 @@ If you're **really** stuck you can take a look at the *solutions* branch.
 
 You can find the documentation here:
 
-    - [MongoDB](https://docs.mongodb.com/manual/)
-    - [Pymongo](https://api.mongodb.com/python/current/)
+* [MongoDB](https://docs.mongodb.com/manual/)
+* [Pymongo](https://api.mongodb.com/python/current/)
 
 [**Exercise 1 - Making a Connection**](https://github.com/Dzvezdana/introduction-to-pymongo/blob/exercises/_1_create_client.py)
 
