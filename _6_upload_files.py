@@ -9,13 +9,13 @@ contacts_collection_raw_xml = contacts_database["raw_xml"]
 contacts_collection_xml = contacts_database["contacts_xml"]
 
 
-def import_csv_file():
-    # Import csv file into MongoDB
+def import_json_file():
+    # Import dataset.json into MongoDB
     return
 
 
-def import_json_file():
-    # Import json into MongoDB
+def import_csv_file():
+    # Import telefoniaBCN.csv into MongoDB
     return
 
 
@@ -26,8 +26,8 @@ def import_xml_file():
 
 
 def main():
-    # import_csv_file()
     # import_json_file()
+    # import_csv_file()
     # import_xml_file()
     return
 

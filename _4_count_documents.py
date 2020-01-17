@@ -36,7 +36,7 @@ with client:
 
     '''
     Exercise 4
-    Sort the employee data in descending way
+    Sort the employee using their salary in descending way
     '''
     # employee_data = # Add code here
     # for employee in employee_data:

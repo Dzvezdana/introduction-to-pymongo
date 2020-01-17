@@ -1,7 +1,12 @@
 from _1_create_client import create_connection
 
 '''
-Let's create our first collection and learn some basic database management operations.
+Let's create our first collections and learn some basic database management operations.
+
+Notice how the last document contains one extra field 'age' that no other document has.
+This would not be possible in Relational Databases. In relational databases if we needed 
+the field 'age' in only one row of the table, we would have to add it as a column and 
+insert Null in all remaining rows.
 '''
 employee_data = [
     {'name': 'Jane', 'salary': 52692},
@@ -11,7 +16,8 @@ employee_data = [
     {'name': 'Emma', 'salary': 340000},
     {'name': 'Christopher', 'salary': 22700},
     {'name': 'Olivia', 'salary': 41700},
-    {'name': 'Isabella', 'salary': 19600}
+    {'name': 'Isabella', 'salary': 19600},
+    {'name': 'Mike', 'salary': 1600, 'age': 19}
 ]
 
 # Create the connection

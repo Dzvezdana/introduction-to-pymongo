@@ -6,8 +6,10 @@ with client:
     db = client.testdb
 
     # Gets all data of collection
-    # find returns a Cursor, use list it to see the content
     employees = db.employee_data.find()
+
+    # find returns a Cursor, use list to see the content
+    # print("Content of employee_data": "Your code goes here")
 
     print(employees.next())
     print(employees.next())
