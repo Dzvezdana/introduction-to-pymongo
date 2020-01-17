@@ -31,7 +31,6 @@ def create_heatmap(df, longitude):
         lngs.append(float(df.loc[i]["lon"]))
         totals.append(float(df.loc[i]["bikes"]))
 
-    # Adapted from https://colab.research.google.com/github/Giffy/MongoDB_PyMongo_Tutorial/blob/master/2_1_Mobile_coverage.ipynb
     location_map.add_child(plugins.HeatMap(zip(lats, lngs, totals), radius=12))
     location_map.save("index.html")
 

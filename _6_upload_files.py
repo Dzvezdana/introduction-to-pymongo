@@ -14,6 +14,12 @@ contacts_collection_raw_xml = contacts_database["raw_xml"]
 contacts_collection_xml = contacts_database["contacts_xml"]
 
 
+def import_json_file():
+    # Import json into MongoDB
+    json_data = json.loads(open('./data/dataset.json').read())
+    contacts_collection_json.insert_many(json_data)
+
+
 def import_csv_file():
     # Import csv file into MongoDB
     df = open('./data/telefoniaBCN.csv')
@@ -39,14 +45,8 @@ def import_csv_file():
         })
 
 
-def import_json_file():
-    # Import json into MongoDB
-    json_data = json.loads(open('./data/dataset.json').read())
-    contacts_collection_json.insert_many(json_data)
-
-
 def import_xml_file():
-    # initialize XML parser and parse file
+    # Initialize XML parser and parse the file
     parser = et.XMLParser(remove_blank_text=False, ns_clean=False)
     xml = et.parse('./data/dataset.xml', parser=parser)
     root = xml.getroot()
@@ -63,8 +63,8 @@ def import_xml_file():
 
 
 def main():
-    # import_csv_file()
     import_json_file()
+    # import_csv_file()
     # import_xml_file()
 
 
