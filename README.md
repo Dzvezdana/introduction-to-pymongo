@@ -45,6 +45,10 @@ Then we first need to convert the file to a format MongoDB understands.
 Let's learn how to do this in the following exercise.
 
 The data you need to upload is located in the [data folder](https://github.com/Dzvezdana/introduction-to-pymongo/tree/exercises/data). 
+Upload `dataset.json`, `dataset.xml` and `telefoniaBCN.csv`. You don't have to upload the `availability_map.json` file yet. 
+We gonna use the for the next exercise.
+
+*Note*: Don't use the shell to upload the files.
 
 *Hint 1*: You can use the csv module to read the csv file. We need to create a dictionary from the csv.
 
