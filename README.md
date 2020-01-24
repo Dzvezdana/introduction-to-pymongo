@@ -2,7 +2,6 @@
 
 This directory contains a set of basic examples for new MongoDB users.
 Clone the repository and create a new *exercises* branch.
-If you're **really** stuck you can take a look at the *solutions* branch.
 
 You can find the documentation here:
 
