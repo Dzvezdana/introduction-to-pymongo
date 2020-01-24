@@ -58,6 +58,3 @@ with client:
         {'name': 'Gonzalez'},
         {'$set': {'salary': 13000}}, upsert=True)
     print(list(db.employee_data.find({'name': 'Gonzalez'})))
-
-
-client.close()

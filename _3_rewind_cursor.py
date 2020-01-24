@@ -28,5 +28,3 @@ with client:
 
     # Print data for Emma
     print(list(db.employee_data.find({'name': "Emma"})))
-
-client.close()
