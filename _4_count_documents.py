@@ -47,7 +47,7 @@ with client:
 
     '''
     Exercise 5
-    Skip every second document and print the first 3 results
+    Skip the first 2 documents and then print the next 3 results
     '''
     # employee_data = # Add code here
     # for employee in employee_data:
