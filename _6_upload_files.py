@@ -56,16 +56,16 @@ def import_xml_file():
     xml_document = {"xml_blob": xml_blob}
     contacts_collection_raw_xml.insert_one(xml_document)
 
-    # Parse XML to JSON and insert into the contacts_collection_xml collection
+    # Parse XML to JSON and insert into the contacts_collection_xml collection.
     parsed = yh.data(root)
     parsed_doc = json.loads(json.dumps(parsed))
-    contacts_collection_xml.insert_one(parsed_doc)
+    contacts_collection_xml.insert_many(parsed_doc['dataset']['record'])
 
 
 def main():
-    import_json_file()
+    # import_json_file()
     # import_csv_file()
-    # import_xml_file()
+    import_xml_file()
 
 
 if __name__ == "__main__":
