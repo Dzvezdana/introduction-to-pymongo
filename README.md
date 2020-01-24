@@ -52,7 +52,10 @@ We gonna use the for the next exercise.
 *Hint 1*: You can use the csv module to read the csv file. We need to create a dictionary from the csv.
 
 *Hint 2*: I used [lxml](https://lxml.de/) to process the XML file in Python and [xmljson](https://pypi.org/project/xmljson/)
-to convert the XML file to JSON. Of course this is just one way how this can be done and you can take a different approach. 
+to convert the XML file to JSON. Of course this is just one way how this can be done and you can take a different approach.
+
+*Hint 3*: Be careful: depending on the parser you're gonna use, you might end up with one JSON for the whole XML file. 
+However, you need to insert as many documents in the collection as ids. So you need to select array field from the final output. 
 
 [**Exercise 7 - Analyzing Bicycle Data**](https://github.com/Dzvezdana/introduction-to-pymongo/blob/master/_7_bicycle_data.py)
 
