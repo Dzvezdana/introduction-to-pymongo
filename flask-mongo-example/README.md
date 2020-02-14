@@ -1,12 +1,13 @@
-### Designing RESTful API with Python-Flask and MongoDB
+### Designing REST API with Python-Flask and MongoDB
 
-This project demonstrates how to design RESTful API with Python-Flask and MongoDB.
+This project demonstrates how to design REST API with Python-Flask and MongoDB.
 
 Here are the tools we’ll need to build our APIs:
 
 * Python 3.7
 * [Postman](https://www.postman.com/)
 * MongoDB
+* Docker
 
 ##### Create your local environment
 
