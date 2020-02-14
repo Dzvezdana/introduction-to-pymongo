@@ -42,12 +42,12 @@ We'll use [Postman](https://www.postman.com/) to explore the APIs.
 [![POST](https://i.postimg.cc/dt98gDRv/POST.png)](https://postimg.cc/WhhFkNff)
 
 ##### GET Example
-[GET](https://postimg.cc/Yh59L1Fh)
+[![GET](https://i.postimg.cc/pLTn7CXY/GET.png)](https://postimg.cc/Yh59L1Fh)
 
 ##### DELETE Example
-[DELETE](https://postimg.cc/DWd8T88m)
+[![DELETE](https://i.postimg.cc/cJPYf3W7/DELETE.png)](https://postimg.cc/DWd8T88m)
 
 ##### UPDATE Example
-[UPDATE](https://postimg.cc/bDVYyb8Y)
+[![UPDATE](https://i.postimg.cc/SRknG7v9/UPDATE.png)](https://postimg.cc/bDVYyb8Y)
 
 *Adapted from*: https://github.com/Moesif/moesif-flask-mongo-example
