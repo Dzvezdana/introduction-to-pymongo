@@ -39,7 +39,7 @@ Once the application is started, go to [localhost](http://0.0.0.0:80/).
 We'll use [Postman](https://www.postman.com/) to explore the APIs.
 
 ##### POST Example
-[POST](https://postimg.cc/WhhFkNff)
+[![POST](https://i.postimg.cc/dt98gDRv/POST.png)](https://postimg.cc/WhhFkNff)
 
 ##### GET Example
 [GET](https://postimg.cc/Yh59L1Fh)
