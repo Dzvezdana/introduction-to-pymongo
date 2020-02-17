@@ -2,6 +2,8 @@
 
 This directory contains a set of basic examples for new MongoDB users.
 Clone the repository and create a new *exercises* branch.
+In addition, it contains an example for a REST API loading data into MongoDB. For more information see: 
+[flask-mongo-example](https://github.com/Dzvezdana/introduction-to-pymongo/tree/rest-api-example/flask-mongo-example).
 
 You can find the documentation here:
 
