@@ -24,39 +24,46 @@ employee_data = [
 client = create_connection()
 
 
-def insert_in_collection():
+def insert_in_collection(documents):
     '''
     Exercise 1
     Create the employee_data collection.
     How many documents does it contain?
     '''
+    db = client.test_database
+    employees = db.employees
+    insert_result = db.employees.insert_many(documents) #make sure use python codes for insertion
     print("Insert data in collection...")
     # insert_result = # Create the collection here
     return insert_result
 
 
-with client:
+with client: # this clean up all the actions done within
     # Set database name to work with.
     # If it doesn't exist, it will be created as soon as one document is added.
-    db = client.testdb
 
-    insert_result = insert_in_collection()
+
+    #comment out inser_result and first print statement after running
+    #insert_result = insert_in_collection(employee_data)
     # Confirms that insert is successful
-    print("Is insert successful: ", insert_result.acknowledged)
+    #print("Is insert successful: ", insert_result.acknowledged)
     print("\n")
 
     '''
     Exercise 2
     Print the existing database names
     '''
-    # print("Database names: ", "Add code here")
+    print("Database names: ", client.list_database_names())
+    # Database names:  ['admin', 'config', 'first-test', 'local', 'test_database']
     # print("\n")
+
 
     '''
     Exercise 3
     List collections names
     '''
-    # print("Collections names: ", "Add code here")
+    db = client.test_database
+    print("Collections names: ", db.list_collection_names())
     # print("\n")
 
     '''
@@ -64,9 +71,9 @@ with client:
     Update an existing document.
     Update Williams salary to 10 000
     '''
-    # update_result = # Add code here
+    update_result = db.employees.update_one({'name': 'William'}, {'$set': {'salary': 10000}})
     # Confirm the change
-    # print(list(db.employee_data.find({'name': 'William'})))
+    print(list(db.employees.find({'name': 'William'})))
     # print("\n")
 
     '''
@@ -74,9 +81,9 @@ with client:
     Insert a new document with update.
     Create new employee Gonzalez, whose salary is 13000
     '''
-    # insert_result = # Add code here
+    insert_result = db.employees.insert_one({'name':'Gonzalez', 'salary': 13000})
     # Confirm the change
-    # print(list(db.employee_data.find({'name': 'Gonzalez'})))
+    print(list(db.employees.find({'name': 'Gonzalez'})))
 
 # Close the connection
 client.close()
