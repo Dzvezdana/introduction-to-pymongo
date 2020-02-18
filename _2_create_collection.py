@@ -28,9 +28,10 @@ with client:
     db = client.testdb
 
     # Create the employee_data collection.
-    # How many documents does it contain? Eight documents.
+    # How many documents does it contain? Nine documents.
     print("Insert data in collection...")
     insert_result = db.employee_data.insert_many(employee_data)
+    db.employee_data.count()
 
     # Confirms that insert is successful
     print("Is insert successful: ", insert_result.acknowledged)
