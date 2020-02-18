@@ -6,10 +6,12 @@ Exercise 1: Import PyMongo and establish connection.
 
 
 def create_connection():
-    # uri - defines the connection parameters
+    # uri - defines the connection
+    # parameters
     uri = 'mongodb://localhost:27017/'
     # Start client to connect to MongoDB server
     # client = # Create the client here
+    client = MongoClient(uri)
     return client
 
 
